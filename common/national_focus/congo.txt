@@ -3908,15 +3908,26 @@ focus_tree = {
 		}
 	
 		available = {
-			any_country_with_original_tag = {
-				original_tag_to_check = BEL
-				OR = {
-					has_subject = ROOT
-					is_in_faction_with = ROOT
-				}
-				has_war = yes
-				has_civil_war = no
-			}	
+			OR = {
+				any_country_with_original_tag = {
+					original_tag_to_check = BEL
+					OR = {
+						has_subject = ROOT
+						is_in_faction_with = ROOT
+					}
+					has_war = yes
+					has_civil_war = no
+				}	
+				any_country_with_original_tag = {
+					original_tag_to_check = HOL
+					OR = {
+						has_subject = ROOT
+						is_in_faction_with = ROOT
+					}
+					has_war = yes
+					has_civil_war = no
+				}	
+			}
 		}
 	
 		completion_reward = { 
@@ -3991,14 +4002,25 @@ focus_tree = {
 		}
 	
 		available = {
-			any_country_with_original_tag = {
-				original_tag_to_check = BEL
-				OR = {
-					has_subject = ROOT
-					is_in_faction_with = ROOT
+			OR = {
+				any_country_with_original_tag = {
+					original_tag_to_check = BEL
+					OR = {
+						has_subject = ROOT
+						is_in_faction_with = ROOT
+					}
+					has_war = yes
+					has_civil_war = no
 				}
-				has_war = yes
-				has_civil_war = no
+				any_country_with_original_tag = {
+					original_tag_to_check = HOL
+					OR = {
+						has_subject = ROOT
+						is_in_faction_with = ROOT
+					}
+					has_war = yes
+					has_civil_war = no
+				}
 			}
 			has_country_leader = {
 				ruling_only = yes
@@ -4039,14 +4061,25 @@ focus_tree = {
 		}
 	
 		available = {
-			any_country_with_original_tag = {
-				original_tag_to_check = BEL
-				OR = {
-					has_subject = ROOT
-					is_in_faction_with = ROOT
+			OR = {
+				any_country_with_original_tag = {
+					original_tag_to_check = BEL
+					OR = {
+						has_subject = ROOT
+						is_in_faction_with = ROOT
+					}
+					has_war = yes
+					has_civil_war = no
 				}
-				has_war = yes
-				has_civil_war = no
+				any_country_with_original_tag = {
+					original_tag_to_check = HOL
+					OR = {
+						has_subject = ROOT
+						is_in_faction_with = ROOT
+					}
+					has_war = yes
+					has_civil_war = no
+				}
 			}
 		}
 	
@@ -4138,14 +4171,25 @@ focus_tree = {
 		}
 	
 		available = {
-			any_country_with_original_tag = {
-				original_tag_to_check = BEL
-				OR = {
-					has_subject = ROOT
-					is_in_faction_with = ROOT
+			OR = {
+				any_country_with_original_tag = {
+					original_tag_to_check = BEL
+					OR = {
+						has_subject = ROOT
+						is_in_faction_with = ROOT
+					}
+					has_war = yes
+					has_civil_war = no
 				}
-				has_war = yes
-				has_civil_war = no
+				any_country_with_original_tag = {
+					original_tag_to_check = HOL
+					OR = {
+						has_subject = ROOT
+						is_in_faction_with = ROOT
+					}
+					has_war = yes
+					has_civil_war = no
+				}
 			}
 			any_country_with_original_tag = {
 				original_tag_to_check = USA
@@ -4211,14 +4255,25 @@ focus_tree = {
 		}
 	
 		available = {
-			any_country_with_original_tag = {
-				original_tag_to_check = BEL
-				OR = {
-					has_subject = ROOT
-					is_in_faction_with = ROOT
+			OR = {
+				any_country_with_original_tag = {
+					original_tag_to_check = BEL
+					OR = {
+						has_subject = ROOT
+						is_in_faction_with = ROOT
+					}
+					has_war = yes
+					has_civil_war = no
 				}
-				has_war = yes
-				has_civil_war = no
+				any_country_with_original_tag = {
+					original_tag_to_check = HOL
+					OR = {
+						has_subject = ROOT
+						is_in_faction_with = ROOT
+					}
+					has_war = yes
+					has_civil_war = no
+				}
 			}
 			any_country_with_original_tag = {
 				original_tag_to_check = ENG
@@ -4261,14 +4316,25 @@ focus_tree = {
 		}
 	
 		available = {
-			any_country_with_original_tag = {
-				original_tag_to_check = BEL
-				OR = {
-					has_subject = ROOT
-					is_in_faction_with = ROOT
+			OR = {
+				any_country_with_original_tag = {
+					original_tag_to_check = BEL
+					OR = {
+						has_subject = ROOT
+						is_in_faction_with = ROOT
+					}
+					has_war = yes
+					has_civil_war = no
 				}
-				has_war = yes
-				has_civil_war = no
+				any_country_with_original_tag = {
+					original_tag_to_check = HOL
+					OR = {
+						has_subject = ROOT
+						is_in_faction_with = ROOT
+					}
+					has_war = yes
+					has_civil_war = no
+				}
 			}
 			any_country_with_original_tag = {
 				original_tag_to_check = ENG
@@ -4367,14 +4433,25 @@ focus_tree = {
 		}
 	
 		available = {
-			any_country_with_original_tag = {
-				original_tag_to_check = BEL
-				OR = {
-					has_subject = ROOT
-					is_in_faction_with = ROOT
+			OR = {
+				any_country_with_original_tag = {
+					original_tag_to_check = BEL
+					OR = {
+						has_subject = ROOT
+						is_in_faction_with = ROOT
+					}
+					has_war = yes
+					has_civil_war = no
 				}
-				has_war = yes
-				has_civil_war = no
+				any_country_with_original_tag = {
+					original_tag_to_check = HOL
+					OR = {
+						has_subject = ROOT
+						is_in_faction_with = ROOT
+					}
+					has_war = yes
+					has_civil_war = no
+				}
 			}
 			BEL = {
 				has_completed_focus = BEL_unfit_to_reign
@@ -4413,14 +4490,25 @@ focus_tree = {
 		}
 	
 		available = {
-			any_country_with_original_tag = {
-				original_tag_to_check = BEL
-				OR = {
-					has_subject = ROOT
-					is_in_faction_with = ROOT
+			OR = {
+				any_country_with_original_tag = {
+					original_tag_to_check = BEL
+					OR = {
+						has_subject = ROOT
+						is_in_faction_with = ROOT
+					}
+					has_war = yes
+					has_civil_war = no
 				}
-				has_war = yes
-				has_civil_war = no
+				any_country_with_original_tag = {
+					original_tag_to_check = HOL
+					OR = {
+						has_subject = ROOT
+						is_in_faction_with = ROOT
+					}
+					has_war = yes
+					has_civil_war = no
+				}
 			}
 		}
 	
@@ -4475,14 +4563,25 @@ focus_tree = {
 		}
 	
 		available = {
-			any_country_with_original_tag = {
-				original_tag_to_check = BEL
-				OR = {
-					has_subject = ROOT
-					is_in_faction_with = ROOT
+			OR = {
+				any_country_with_original_tag = {
+					original_tag_to_check = BEL
+					OR = {
+						has_subject = ROOT
+						is_in_faction_with = ROOT
+					}
+					has_war = yes
+					has_civil_war = no
 				}
-				has_war = yes
-				has_civil_war = no
+				any_country_with_original_tag = {
+					original_tag_to_check = HOL
+					OR = {
+						has_subject = ROOT
+						is_in_faction_with = ROOT
+					}
+					has_war = yes
+					has_civil_war = no
+				}
 			}
 			AND = {
 				is_in_faction_with = SAF
@@ -4537,14 +4636,25 @@ focus_tree = {
 		}
 	
 		available = {
-			any_country_with_original_tag = {
-				original_tag_to_check = BEL
-				OR = {
-					has_subject = ROOT
-					is_in_faction_with = ROOT
+			OR = {
+				any_country_with_original_tag = {
+					original_tag_to_check = BEL
+					OR = {
+						has_subject = ROOT
+						is_in_faction_with = ROOT
+					}
+					has_war = yes
+					has_civil_war = no
 				}
-				has_war = yes
-				has_civil_war = no
+				any_country_with_original_tag = {
+					original_tag_to_check = HOL
+					OR = {
+						has_subject = ROOT
+						is_in_faction_with = ROOT
+					}
+					has_war = yes
+					has_civil_war = no
+				}
 			}
 			796 = {
 				OWNER = {

@@ -20,25 +20,13 @@ characters = {
 		# scripted effect COG_keep_patrick_said_in_power).
 		country_leader = {
 			ideology = oligarchism
-			traits = { pro_allied_governor_general }
+			traits = { pro_allied_governor_general COG_scientific_governor }
 			expire = "1999.1.1.1"
 			id = -1
 		}
 		country_leader = {
 			ideology = liberalism
-			traits = { pro_allied_governor_general }
-			expire = "1999.1.1.1"
-			id = -1
-		}
-		country_leader = {
-			ideology = fascism
-			traits = { pro_allied_governor_general }
-			expire = "1999.1.1.1"
-			id = -1
-		}
-		country_leader = {
-			ideology = marxism
-			traits = { pro_allied_governor_general }
+			traits = { pro_allied_governor_general COG_scientific_governor }
 			expire = "1999.1.1.1"
 			id = -1
 		}

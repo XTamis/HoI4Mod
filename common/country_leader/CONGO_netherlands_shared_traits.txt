@@ -1,0 +1,16 @@
+leader_traits = {
+
+	# Custom trait for the Dutch-appointed Governor-General of the Congo:
+	# +20% research speed. random = no so it is never auto-assigned to other leaders.
+	COG_scientific_governor = {
+		random = no
+		sprite = 13
+
+		research_speed_factor = 0.20
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+}

@@ -16,5 +16,7 @@
  CONGO_overlord_seat_hol: "The Hague"
  COG_patrick_said: "Patrick Said"
  congo_netherlands.1.t: "A New Governor-General"
- congo_netherlands.1.d: "With Belgium gone and the administration of the Congo passed into Dutch hands, the colonial government in Léopoldville has been left without a head. The Hague has moved quickly to restore order, dispatching the experienced colonial administrator Patrick 'Zeppy Woeloem' Said to take up the office of Governor-General and carry on the work of his predecessor."
+ congo_netherlands.1.d: "With Belgium gone and the administration of the Congo passed into Dutch hands, the colonial government in Léopoldville has been left without a head. The Hague has moved quickly to restore order, dispatching the experienced colonial administrator Patrick 'Aerion' Said to take up the office of Governor-General and carry on the work of his predecessor."
  congo_netherlands.1.a: "Order will be maintained"
+ COG_scientific_governor: "Certified Kebab Inspector"
+ COG_scientific_governor_desc: "A committed believer in the civilising power of kebabs, the Governor-General pours colonial revenue into laboratories, universities and research stations across the Congo-Vrijstaat."
