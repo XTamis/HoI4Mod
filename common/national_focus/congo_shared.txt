@@ -1252,7 +1252,7 @@
 
 		cost = 5
 
-		text_icon = CONGO_BEL_focus_style
+		text_icon = INSHOL_HOL_focus_style
 
 		allow_branch = {
 			OR = {
@@ -1428,7 +1428,7 @@
 
 		cost = 10
 
-		text_icon = CONGO_BEL_focus_style
+		text_icon = INSHOL_HOL_focus_style
 
 		available = { 
 			OR = {
@@ -1552,7 +1552,7 @@
 
 		search_filters = { FOCUS_FILTER_TFV_AUTONOMY FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL FOCUS_FILTER_POLITICAL_CHARACTER }
 
-		text_icon = CONGO_BEL_COG_focus_style
+		text_icon = CONGO_HOL_COG_focus_style
 
 		joint_trigger = {
 			CONGO_is_a_congo_viable_nation = yes 
@@ -1843,7 +1843,7 @@
 
 		cost = 10
 
-		text_icon = CONGO_BEL_COG_focus_style
+		text_icon = CONGO_HOL_COG_focus_style
 
 		joint_trigger = {
 			CONGO_is_a_congo_viable_nation = yes 
@@ -2072,7 +2072,7 @@
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
-		text_icon = CONGO_BEL_COG_focus_style
+		text_icon = CONGO_HOL_COG_focus_style
 
 		available = { 
 			OR = {
@@ -2599,7 +2599,7 @@
 
 		cost = 10
 
-		text_icon = CONGO_BEL_COG_focus_style
+		text_icon = CONGO_HOL_COG_focus_style
 
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL FOCUS_FILTER_TFV_AUTONOMY }
 
@@ -2933,7 +2933,7 @@
 
 		cost = 5
 
-		text_icon = CONGO_BEL_focus_style
+		text_icon = INSHOL_HOL_focus_style
 
 		joint_trigger = {
 			CONGO_is_a_congo_viable_nation = yes 
@@ -3110,7 +3110,7 @@
 			}
 		}
 
-		text_icon = CONGO_BEL_COG_focus_style
+		text_icon = CONGO_HOL_COG_focus_style
 
 		joint_trigger = {
 			CONGO_is_a_congo_viable_nation = yes 
@@ -3350,7 +3350,7 @@
 
 		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_HISTORICAL FOCUS_FILTER_TFV_AUTONOMY }
 
-		text_icon = CONGO_BEL_COG_focus_style
+		text_icon = CONGO_HOL_COG_focus_style
 
 
 		available = { 
@@ -3382,7 +3382,10 @@
 				}
 			}
 			OR = {
-				original_tag = BEL
+				OR = {
+					original_tag = BEL
+					original_tag = HOL
+				}
 				AND = {
 					original_tag = COG
 					has_completed_focus = COG_congo_and_the_war_in_europe
@@ -3534,7 +3537,7 @@
 
 		cost = 10
 
-		text_icon = CONGO_BEL_focus_style
+		text_icon = INSHOL_HOL_focus_style
 
 		allow_branch = {
 			OR = {
@@ -3750,7 +3753,7 @@
 
 		cost = 10
 
-		text_icon = CONGO_BEL_COG_focus_style
+		text_icon = CONGO_HOL_COG_focus_style
 
 		joint_trigger = {
 			CONGO_is_a_congo_viable_nation = yes 
@@ -3909,7 +3912,7 @@
 
 		cost = 10
 
-		text_icon = CONGO_BEL_COG_focus_style
+		text_icon = CONGO_HOL_COG_focus_style
 
 		joint_trigger = {
 			CONGO_is_a_congo_viable_nation = yes 
@@ -4120,7 +4123,7 @@
 
 		cost = 10
 
-		text_icon = CONGO_BEL_COG_focus_style
+		text_icon = CONGO_HOL_COG_focus_style
 
 		joint_trigger = {
 			CONGO_is_a_congo_viable_nation = yes 
@@ -4369,7 +4372,7 @@
 
 		cost = 10
 
-		text_icon = CONGO_BEL_COG_focus_style
+		text_icon = CONGO_HOL_COG_focus_style
 
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL FOCUS_FILTER_TFV_AUTONOMY }
 
@@ -4667,7 +4670,7 @@
 
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_HISTORICAL FOCUS_FILTER_TFV_AUTONOMY }
 
-		text_icon = CONGO_BEL_focus_style
+		text_icon = INSHOL_HOL_focus_style
 
 		available = { 
 			OR = {
@@ -4758,7 +4761,7 @@
 
 		cost = 10
 
-		text_icon = CONGO_BEL_COG_focus_style
+		text_icon = CONGO_HOL_COG_focus_style
 
 		joint_trigger = {
 			CONGO_is_a_congo_viable_nation = yes 
@@ -5227,7 +5230,7 @@
 
 		cost = 10
 
-		text_icon = CONGO_BEL_COG_focus_style
+		text_icon = CONGO_HOL_COG_focus_style
 
 		joint_trigger = {
 			CONGO_is_a_congo_viable_nation = yes 
@@ -5345,7 +5348,7 @@
 
 		cost = 10
 
-		text_icon = CONGO_BEL_focus_style
+		text_icon = INSHOL_HOL_focus_style
 
 		search_filters = { FOCUS_FILTER_TFV_AUTONOMY }
 
@@ -5452,7 +5455,7 @@
 
 		cost = 10
 
-		text_icon = CONGO_BEL_COG_focus_style
+		text_icon = CONGO_HOL_COG_focus_style
 
 		search_filters = { FOCUS_FILTER_MILITARY_CHARACTER FOCUS_FILTER_HISTORICAL }
 
@@ -5622,7 +5625,7 @@
 
 		cost = 10
 
-		text_icon = CONGO_BEL_COG_focus_style
+		text_icon = CONGO_HOL_COG_focus_style
 
 		joint_trigger = {
 			CONGO_is_a_congo_viable_nation = yes 
@@ -5902,7 +5905,7 @@
 
 		cost = 10
 
-		text_icon = CONGO_BEL_focus_style
+		text_icon = INSHOL_HOL_focus_style
 
 		search_filters = { FOCUS_FILTER_TFV_AUTONOMY FOCUS_FILTER_HISTORICAL }
 
@@ -5969,7 +5972,7 @@
 
 		cost = 10
 
-		text_icon = CONGO_BEL_COG_focus_style
+		text_icon = CONGO_HOL_COG_focus_style
 
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_TFV_AUTONOMY }
 
@@ -6263,7 +6266,7 @@
 
 		cost = 12
 
-		text_icon = CONGO_BEL_COG_focus_style
+		text_icon = CONGO_HOL_COG_focus_style
 
 		joint_trigger = {
 			CONGO_is_a_congo_viable_nation = yes 
@@ -6515,7 +6518,7 @@
 
 		cost = 10
 
-		text_icon = CONGO_BEL_COG_focus_style
+		text_icon = CONGO_HOL_COG_focus_style
 
 		joint_trigger = {
 			CONGO_is_a_congo_viable_nation = yes 
@@ -6994,7 +6997,7 @@
 
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_HISTORICAL FOCUS_FILTER_TFV_AUTONOMY }
 
-		text_icon = CONGO_BEL_focus_style
+		text_icon = INSHOL_HOL_focus_style
 
 		available = { 
 			OR = {
@@ -7145,7 +7148,7 @@
 
 		cost = 10
 
-		text_icon = CONGO_BEL_COG_focus_style
+		text_icon = CONGO_HOL_COG_focus_style
 
 		joint_trigger = {
 			CONGO_is_a_congo_viable_nation = yes 
@@ -7271,7 +7274,7 @@
 
 		cost = 10
 
-		text_icon = CONGO_BEL_COG_focus_style
+		text_icon = CONGO_HOL_COG_focus_style
 
 		search_filters = { FOCUS_FILTER_MILITARY_CHARACTER FOCUS_FILTER_HISTORICAL }
 
@@ -7405,7 +7408,7 @@
 			}
 		}
 
-		text_icon = CONGO_BEL_focus_style
+		text_icon = INSHOL_HOL_focus_style
 
 		available = { 
 			OR = {
@@ -7502,7 +7505,7 @@
 
 		cost = 10
 
-		text_icon = CONGO_BEL_focus_style
+		text_icon = INSHOL_HOL_focus_style
 
 		available = { 
 			OR = {
@@ -7677,7 +7680,7 @@
 
 		cost = 10
 
-		text_icon = CONGO_BEL_COG_focus_style
+		text_icon = CONGO_HOL_COG_focus_style
 
 		joint_trigger = {
 			CONGO_is_a_congo_viable_nation = yes 
@@ -7888,7 +7891,7 @@
 
 		cost = 10
 
-		text_icon = CONGO_BEL_COG_focus_style
+		text_icon = CONGO_HOL_COG_focus_style
 
 		joint_trigger = {
 			CONGO_is_a_congo_viable_nation = yes 
@@ -8083,7 +8086,7 @@
 
 		cost = 5
 
-		text_icon = CONGO_BEL_focus_style
+		text_icon = INSHOL_HOL_focus_style
 
 		available = { 
 			OR = {
@@ -8187,7 +8190,7 @@
 
 		cost = 10
 
-		text_icon = CONGO_BEL_COG_focus_style
+		text_icon = CONGO_HOL_COG_focus_style
 
 		joint_trigger = {
 			CONGO_is_a_congo_viable_nation = yes 
@@ -8374,7 +8377,7 @@
 
 		cost = 10
 
-		text_icon = CONGO_BEL_focus_style
+		text_icon = INSHOL_HOL_focus_style
 
 		available = { 
 			OR = {
@@ -8533,7 +8536,7 @@
 
 		cost = 10
 
-		text_icon = CONGO_BEL_COG_focus_style
+		text_icon = CONGO_HOL_COG_focus_style
 
 		joint_trigger = {
 			CONGO_is_a_congo_viable_nation = yes 
@@ -8767,7 +8770,7 @@
 
 		cost = 10
 
-		text_icon = CONGO_BEL_focus_style
+		text_icon = INSHOL_HOL_focus_style
 
 		available = { 
 			OR = {
@@ -8906,7 +8909,7 @@
 
 		cost = 10
 
-		text_icon = CONGO_BEL_COG_focus_style
+		text_icon = CONGO_HOL_COG_focus_style
 
 		joint_trigger = {
 			CONGO_is_a_congo_viable_nation = yes 
@@ -9059,7 +9062,7 @@
 
 		cost = 10
 
-		text_icon = CONGO_BEL_focus_style
+		text_icon = INSHOL_HOL_focus_style
 
 		available = { 
 			OR = {
@@ -9271,7 +9274,7 @@
 
 		cost = 10
 
-		text_icon = CONGO_BEL_COG_focus_style
+		text_icon = CONGO_HOL_COG_focus_style
 
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_TFV_AUTONOMY }
 
@@ -9458,7 +9461,7 @@
 
 		cost = 10
 
-		text_icon = CONGO_BEL_COG_focus_style
+		text_icon = CONGO_HOL_COG_focus_style
 
 		joint_trigger = {
 			CONGO_is_a_congo_viable_nation = yes 
@@ -9758,7 +9761,7 @@
 
 		cost = 10
 
-		text_icon = CONGO_BEL_COG_focus_style
+		text_icon = CONGO_HOL_COG_focus_style
 
 		joint_trigger = {
 			CONGO_is_a_congo_viable_nation = yes 
@@ -9876,7 +9879,7 @@
 
 		cost = 10
 
-		text_icon = CONGO_BEL_focus_style
+		text_icon = INSHOL_HOL_focus_style
 
 		available = { 
 			OR = {
@@ -9892,6 +9895,9 @@
 			AND = {
 				OR = {
 					888 = {
+						is_owned_and_controlled_by = HOL
+					}
+					888 = {
 						is_owned_and_controlled_by = BEL
 					}
 					888 = {
@@ -9899,6 +9905,9 @@
 					}
 				}
 				OR = {
+					977 = {
+						is_owned_and_controlled_by = HOL
+					}
 					977 = {
 						is_owned_and_controlled_by = BEL
 					}
@@ -10278,7 +10287,7 @@
 
 		search_filters = { FOCUS_FILTER_TFV_AUTONOMY }
 
-		text_icon = CONGO_BEL_COG_focus_style
+		text_icon = CONGO_HOL_COG_focus_style
 
 		joint_trigger = {
 			CONGO_is_a_congo_viable_nation = yes 
@@ -10398,7 +10407,7 @@
 
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_TFV_AUTONOMY }
 
-		text_icon = CONGO_BEL_COG_focus_style
+		text_icon = CONGO_HOL_COG_focus_style
 
 		joint_trigger = {
 			CONGO_is_a_congo_viable_nation = yes 
@@ -10514,7 +10523,7 @@
 
 		cost = 10
 
-		text_icon = CONGO_BEL_focus_style
+		text_icon = INSHOL_HOL_focus_style
 
 		available = { 
 			OR = {
@@ -10674,7 +10683,7 @@
 
 		cost = 10
 
-		text_icon = CONGO_BEL_COG_focus_style
+		text_icon = CONGO_HOL_COG_focus_style
 
 		joint_trigger = {
 			CONGO_is_a_congo_viable_nation = yes 
@@ -10849,7 +10858,7 @@
 
 		cost = 10
 
-		text_icon = CONGO_BEL_COG_focus_style
+		text_icon = CONGO_HOL_COG_focus_style
 
 		joint_trigger = {
 			CONGO_is_a_congo_viable_nation = yes 
@@ -11069,7 +11078,7 @@
 
 		cost = 12
 
-		text_icon = CONGO_BEL_COG_focus_style
+		text_icon = CONGO_HOL_COG_focus_style
 
 		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_TFV_AUTONOMY }
 
@@ -11233,7 +11242,7 @@
 
 		cost = 10
 
-		text_icon = CONGO_BEL_COG_focus_style
+		text_icon = CONGO_HOL_COG_focus_style
 
 		joint_trigger = {
 			CONGO_is_a_congo_viable_nation = yes 
@@ -11318,7 +11327,7 @@
 
 		cost = 10
 
-		text_icon = CONGO_BEL_COG_focus_style
+		text_icon = CONGO_HOL_COG_focus_style
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
@@ -11716,7 +11725,7 @@
 
 		cost = 10
 
-		text_icon = CONGO_BEL_focus_style
+		text_icon = INSHOL_HOL_focus_style
 
 		available = { 
 			OR = {
@@ -11907,7 +11916,7 @@
 
 		cost = 10
 
-		text_icon = CONGO_BEL_focus_style
+		text_icon = INSHOL_HOL_focus_style
 
 		available = { 
 			OR = {
@@ -12170,7 +12179,7 @@
 
 		cost = 10
 
-		text_icon = CONGO_BEL_COG_focus_style
+		text_icon = CONGO_HOL_COG_focus_style
 
 		joint_trigger = {
 			CONGO_is_a_congo_viable_nation = yes 
@@ -12375,7 +12384,10 @@
 				IF = {
 					limit = {
 						COG = {
-							has_cosmetic_tag = COG_belgian_congo
+							OR = {
+								has_cosmetic_tag = COG_belgian_congo
+								has_cosmetic_tag = COG_benelux_congo
+							}
 						}
 					}
 					COG = {
@@ -12490,7 +12502,10 @@
 				IF = {
 					limit = {
 						COG = {
-							has_cosmetic_tag = COG_belgian_congo
+							OR = {
+								has_cosmetic_tag = COG_belgian_congo
+								has_cosmetic_tag = COG_benelux_congo
+							}
 						}
 					}
 					COG = {
@@ -12548,7 +12563,7 @@
 
 		cost = 10
 
-		text_icon = CONGO_BEL_focus_style
+		text_icon = INSHOL_HOL_focus_style
 
 		available = { 
 			OR = {

@@ -9,7 +9,10 @@ on_actions = {
 				limit = {
 					original_tag = COG
 					is_subject_of = HOL
-					has_cosmetic_tag = COG_belgian_congo
+					OR = {
+						has_cosmetic_tag = COG_belgian_congo
+						has_cosmetic_tag = COG_benelux_congo
+					}
 					NOT = { has_global_flag = CONGO_independence_war_ongoing }
 					NOT = { has_country_flag = COG_dutch_governor_appointed_flag }
 					NOT = {
@@ -30,6 +33,108 @@ on_actions = {
 					id = congo_netherlands.1
 					hours = 6
 				}
+			}
+
+			# Self-heal: once the Dutch governor has been introduced, keep reinstating him
+			# if anything later unseats him (leader-role expiry, a vanilla election event,
+			# ideology drift, etc.) while the Congo is still a Dutch colonial subject.
+			IF = {
+				limit = {
+					original_tag = COG
+					is_subject_of = HOL
+					OR = {
+						has_cosmetic_tag = COG_belgian_congo
+						has_cosmetic_tag = COG_benelux_congo
+					}
+					NOT = { has_global_flag = CONGO_independence_war_ongoing }
+					has_country_flag = COG_dutch_governor_appointed_flag
+					NOT = {
+						has_country_leader = {
+							ruling_only = yes
+							character = COG_pierre_ryckmans
+						}
+					}
+					NOT = {
+						has_country_leader = {
+							ruling_only = yes
+							character = COG_patrick_said
+						}
+					}
+				}
+				COG_keep_patrick_said_in_power = yes
+			}
+
+			# Keep the colonial cosmetic flag matching the actual overlord:
+			# Dutch/Benelux overlord -> Benelux Congo flag, Belgian overlord -> Belgian Congo flag,
+			# and drop the colonial tag entirely once the Congo is freed.
+			IF = {
+				limit = {
+					original_tag = COG
+					is_subject = yes
+					has_cosmetic_tag = COG_belgian_congo
+					CONGO_netherlands_is_the_colonial_power = yes
+				}
+				set_cosmetic_tag = COG_benelux_congo
+			}
+			ELSE_IF = {
+				limit = {
+					original_tag = COG
+					has_cosmetic_tag = COG_benelux_congo
+					OR = {
+						is_subject = no
+						NOT = { CONGO_netherlands_is_the_colonial_power = yes }
+					}
+				}
+				IF = {
+					limit = {
+						is_subject = yes
+						OR = {
+							is_subject_of = BEL
+							is_in_faction_with = BEL
+						}
+					}
+					set_cosmetic_tag = COG_belgian_congo
+				}
+				ELSE = {
+					drop_cosmetic_tag = yes
+				}
+			}
+		}
+	}
+
+	# When the Netherlands annexes Belgium (e.g. Benelux unification), Belgium's
+	# "Colonial Returns" spirit and its accrued bonuses carry over to the Dutch.
+	# ROOT = annexing country, FROM = annexed country.
+	on_annex = {
+		effect = {
+			IF = {
+				limit = {
+					original_tag = HOL
+					NOT = {
+						has_dynamic_modifier = {
+							modifier = HOL_belgian_congo_colonial_returns_dynamic_modifier
+						}
+					}
+					FROM = {
+						original_tag = BEL
+						has_dynamic_modifier = {
+							modifier = BEL_belgian_congo_colonial_returns_dynamic_modifier
+						}
+					}
+				}
+				add_dynamic_modifier = {
+					modifier = HOL_belgian_congo_colonial_returns_dynamic_modifier
+				}
+				set_variable = { HOL_belgian_congo_colonial_returns_dynamic_modifier_political_power_factor = BEL.BEL_belgian_congo_colonial_returns_dynamic_modifier_political_power_factor }
+				set_variable = { HOL_belgian_congo_colonial_returns_dynamic_modifier_resource_trade_cost_bonus_per_factory = BEL.BEL_belgian_congo_colonial_returns_dynamic_modifier_resource_trade_cost_bonus_per_factory }
+				set_variable = { HOL_belgian_congo_colonial_returns_dynamic_modifier_production_lack_of_resource_penalty_factor = BEL.BEL_belgian_congo_colonial_returns_dynamic_modifier_production_lack_of_resource_penalty_factor }
+				set_variable = { HOL_belgian_congo_colonial_returns_dynamic_modifier_industrial_capacity_factory = BEL.BEL_belgian_congo_colonial_returns_dynamic_modifier_industrial_capacity_factory }
+				set_variable = { HOL_belgian_congo_colonial_returns_dynamic_modifier_industrial_capacity_dockyard = BEL.BEL_belgian_congo_colonial_returns_dynamic_modifier_industrial_capacity_dockyard }
+				set_variable = { HOL_belgian_congo_colonial_returns_dynamic_modifier_autonomy_manpower_share = BEL.BEL_belgian_congo_colonial_returns_dynamic_modifier_autonomy_manpower_share }
+				set_variable = { HOL_belgian_congo_colonial_returns_dynamic_modifier_consumer_goods_factor = BEL.BEL_belgian_congo_colonial_returns_dynamic_modifier_consumer_goods_factor }
+				set_variable = { HOL_belgian_congo_colonial_returns_dynamic_modifier_air_training_xp_gain_factor = BEL.BEL_belgian_congo_colonial_returns_dynamic_modifier_air_training_xp_gain_factor }
+				set_variable = { HOL_belgian_congo_colonial_returns_dynamic_modifier_production_speed_air_base_factor = BEL.BEL_belgian_congo_colonial_returns_dynamic_modifier_production_speed_air_base_factor }
+				force_update_dynamic_modifier = yes
 			}
 		}
 	}

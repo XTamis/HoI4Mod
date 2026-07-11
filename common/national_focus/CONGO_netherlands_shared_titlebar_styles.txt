@@ -1,0 +1,10 @@
+# Titlebar style for joint focuses under a Dutch overlord (Netherlands + Congo flags).
+# Additive: a new style name, so no override of vanilla 00_titlebar_styles.txt is needed.
+style = {
+	name = CONGO_HOL_COG_focus_style
+
+	unavailable = GFX_focus_unavailable_joint_HOL_COG
+	completed = GFX_focus_completed_joint_HOL_COG
+	available = GFX_focus_can_start_joint_HOL_COG
+	current = GFX_focus_current_joint_HOL_COG
+}

@@ -1,0 +1,66 @@
+spriteTypes = {
+
+	# Dutch + Congo joint-focus button backgrounds (flag strip: Netherlands + Congo).
+	# Mirrors vanilla GFX_focus_*_joint_BEL_COG; textures live in the mod's
+	# gfx/interface/focusview/titlebar/ folder. Animation overlays reuse vanilla assets.
+
+	spriteType = {
+		name = "GFX_focus_unavailable_joint_HOL_COG"
+		textureFile = "gfx/interface/focusview/titlebar/focus_unavailable_joint_HOL_COG_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_can_start_joint_HOL_COG"
+		textureFile = "gfx/interface/focusview/titlebar/focus_can_start_joint_HOL_COG_bg.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_current_joint_HOL_COG"
+		texturefile = "gfx/interface/focusview/titlebar/focus_can_start_joint_HOL_COG_bg.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/focusview/titlebar/focus_ongoing_mask2.dds"
+			animationtexturefile = "gfx/interface/focusview/titlebar/focus_ongoing_texture.dds"
+			animationrotation = -90.0
+			animationlooping = yes
+			animationtime = 20.0
+			animationdelay = 0.2
+			animationblendmode = "add"
+			animationtype = "rotating"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/focusview/titlebar/focus_ongoing_mask4.dds"
+			animationtexturefile = "gfx/interface/focusview/titlebar/focus_ongoing_texture.dds"
+			animationrotation = 90.0
+			animationlooping = yes
+			animationtime = 15.0
+			animationdelay = 0.2
+			animationblendmode = "add"
+			animationtype = "rotating_ccw"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+	SpriteType = {
+		name = "GFX_focus_completed_joint_HOL_COG"
+		texturefile = "gfx/interface/focusview/titlebar/focus_completed_joint_HOL_COG_bg.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/focusview/titlebar/focus_completed_mask.dds"
+			animationtexturefile = "gfx/interface/focusview/titlebar/focus_completed_texture.dds"
+			animationrotation = 0.0
+			animationlooping = yes
+			animationtime = 26.0
+			animationdelay = 0.0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+}

@@ -1,0 +1,22 @@
+# (Re)installs Patrick Said as the Congo's Governor-General under whatever ideology
+# the colony currently holds. Preserves the current ruling ideology (does not force
+# non-aligned), disables elections so the appointed governor cannot be voted out, then
+# promotes Patrick Said - who holds a country_leader role for all four ideology groups.
+COG_keep_patrick_said_in_power = {
+	IF = {
+		limit = { has_government = democratic }
+		set_politics = { ruling_party = democratic elections_allowed = no }
+	}
+	ELSE_IF = {
+		limit = { has_government = fascism }
+		set_politics = { ruling_party = fascism elections_allowed = no }
+	}
+	ELSE_IF = {
+		limit = { has_government = communism }
+		set_politics = { ruling_party = communism elections_allowed = no }
+	}
+	ELSE = {
+		set_politics = { ruling_party = neutrality elections_allowed = no }
+	}
+	promote_character = COG_patrick_said
+}
