@@ -1510,10 +1510,7 @@ focus_tree = {
 		}
 	
 		available = {
-			has_country_leader = {
-				ruling_only = yes
-				character = COG_pierre_ryckmans
-			}
+			COG_governor_general_is_in_charge = yes
 		}
 	
 		completion_reward = { 
@@ -1613,10 +1610,7 @@ focus_tree = {
 		}
 	
 		available = {
-			has_country_leader = {
-				ruling_only = yes
-				character = COG_pierre_ryckmans
-			}
+			COG_governor_general_is_in_charge = yes
 		}
 	
 		completion_reward = { 
@@ -1651,10 +1645,7 @@ focus_tree = {
 		}
 	
 		available = {
-			has_country_leader = {
-				ruling_only = yes
-				character = COG_pierre_ryckmans
-			}
+			COG_governor_general_is_in_charge = yes
 		}
 	
 		completion_reward = { 
@@ -1703,10 +1694,7 @@ focus_tree = {
 			889 = {
 				is_owned_and_controlled_by = ROOT
 			}
-			has_country_leader = {
-				ruling_only = yes
-				character = COG_pierre_ryckmans
-			}
+			COG_governor_general_is_in_charge = yes
 		}
 	
 		completion_reward = { 
@@ -1767,21 +1755,32 @@ focus_tree = {
 			889 = {
 				is_owned_and_controlled_by = ROOT
 			}
-			BEL = {
-				exists = yes
-				NOT = {
-					has_war_with = ROOT
-				}
-				has_civil_war = no
-			}
 			OR = {
-				is_subject_of = BEL
-				is_in_faction_with = BEL
+				AND = {
+					BEL = {
+						exists = yes
+						NOT = {
+							has_war_with = ROOT
+						}
+						has_civil_war = no
+					}
+					OR = {
+						is_subject_of = BEL
+						is_in_faction_with = BEL
+					}
+				}
+				AND = {
+					HOL = {
+						exists = yes
+						NOT = {
+							has_war_with = ROOT
+						}
+						has_civil_war = no
+					}
+					is_subject_of = HOL
+				}
 			}
-			has_country_leader = {
-				ruling_only = yes
-				character = COG_pierre_ryckmans
-			}
+			COG_governor_general_is_in_charge = yes
 		}
 	
 		completion_reward = { 
@@ -1794,11 +1793,25 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 			
-			BEL = {
-				country_event = {
-					id = ww_congo.22
-					hours = 12
-					random_hours = 24
+			IF = {
+				limit = {
+					is_subject_of = HOL
+				}
+				HOL = {
+					country_event = {
+						id = ww_congo.22
+						hours = 12
+						random_hours = 24
+					}
+				}
+			}
+			ELSE = {
+				BEL = {
+					country_event = {
+						id = ww_congo.22
+						hours = 12
+						random_hours = 24
+					}
 				}
 			}
 
@@ -1826,15 +1839,21 @@ focus_tree = {
 	
 		available = {
 			OR = {
-				has_country_leader = {
-					ruling_only = yes
-					character = COG_pierre_ryckmans
-				}
+				COG_governor_general_is_in_charge = yes
 				BEL = {
 					has_opinion = {
 						target = ROOT
 						value > 49
-					}	
+					}
+				}
+				AND = {
+					is_subject_of = HOL
+					HOL = {
+						has_opinion = {
+							target = ROOT
+							value > 49
+						}
+					}
 				}
 			}
 		}
@@ -2103,10 +2122,7 @@ focus_tree = {
 		}
 	
 		available = {
-			has_country_leader = {
-				ruling_only = yes
-				character = COG_pierre_ryckmans
-			}
+			COG_governor_general_is_in_charge = yes
 			AND = {
 				owns_state = 768
 				owns_state = 769
@@ -2557,10 +2573,7 @@ focus_tree = {
 		}
 	
 		available = {
-			has_country_leader = {
-				ruling_only = yes
-				character = COG_pierre_ryckmans
-			}
+			COG_governor_general_is_in_charge = yes
 		}
 	
 		completion_reward = { 

@@ -1,0 +1,12 @@
+spriteTypes = {
+
+	# Custom portrait for the Dutch-appointed Governor-General of the Congo.
+	# Drop your image at the texturefile path below:
+	#  - size: 156 x 210 pixels
+	#  - format: 32-bit DDS (8.8.8.8 ARGB, uncompressed, no mipmaps) or 32-bit TGA
+	spriteType = {
+		name = "GFX_portrait_COG_dutch_governor_general"
+		texturefile = "gfx/leaders/COG/portrait_COG_dutch_governor_general.dds"
+	}
+
+}

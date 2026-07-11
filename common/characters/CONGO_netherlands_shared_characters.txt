@@ -1,0 +1,27 @@
+characters = {
+
+	# Dutch colonial administrator installed as Governor-General of the Congo
+	# when the Netherlands takes over the colony and Pierre Ryckmans is unseated.
+	COG_patrick_said = {
+
+		name = COG_patrick_said
+
+		portraits = {
+			civilian = {
+				# Once your custom portrait is at gfx/leaders/COG/portrait_COG_dutch_governor_general.dds,
+				# delete the generic line below and uncomment the custom one:
+				large = GFX_portrait_europe_generic_land_13
+				#large = GFX_portrait_COG_dutch_governor_general
+			}
+		}
+
+		country_leader = {
+			ideology = oligarchism
+			traits = { pro_allied_governor_general }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+
+	}
+
+}

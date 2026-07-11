@@ -1,0 +1,37 @@
+on_actions = {
+
+	# If the Netherlands has taken over the colonial Congo and the colony has been
+	# left without its Governor-General (e.g. the Benelux unification unseated
+	# Pierre Ryckmans), the Dutch appoint their own administrator.
+	on_weekly_COG = {
+		effect = {
+			IF = {
+				limit = {
+					original_tag = COG
+					is_subject_of = HOL
+					has_cosmetic_tag = COG_belgian_congo
+					NOT = { has_global_flag = CONGO_independence_war_ongoing }
+					NOT = { has_country_flag = COG_dutch_governor_appointed_flag }
+					NOT = {
+						has_country_leader = {
+							ruling_only = yes
+							character = COG_pierre_ryckmans
+						}
+					}
+					NOT = {
+						has_country_leader = {
+							ruling_only = yes
+							character = COG_patrick_said
+						}
+					}
+				}
+				set_country_flag = COG_dutch_governor_appointed_flag
+				country_event = {
+					id = congo_netherlands.1
+					hours = 6
+				}
+			}
+		}
+	}
+
+}

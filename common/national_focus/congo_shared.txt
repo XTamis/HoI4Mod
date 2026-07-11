@@ -1257,6 +1257,7 @@
 		allow_branch = {
 			OR = {
 				original_tag = BEL
+				original_tag = HOL
 				original_tag = COG
 			}
 		}
@@ -3383,6 +3384,7 @@
 		allow_branch = {
 			OR = {
 				original_tag = BEL
+				original_tag = HOL
 				original_tag = COG
 			}
 		}
@@ -3578,6 +3580,7 @@
 		allow_branch = {
 			OR = {
 				original_tag = BEL
+				original_tag = HOL
 				original_tag = COG
 			}
 		}
@@ -7442,6 +7445,7 @@
 		allow_branch = {
 			OR = {
 				original_tag = BEL
+				original_tag = HOL
 				original_tag = COG
 			}
 		}

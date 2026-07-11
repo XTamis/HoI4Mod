@@ -1,0 +1,68 @@
+# Dynamic overlord flavor for the shared Congo focus tree and its events.
+# Resolves to Dutch text when the Netherlands is the Congo's colonial power, Belgian otherwise.
+
+defined_text = {
+	name = CONGO_GetOverlordName
+	text = {
+		trigger = { CONGO_netherlands_is_the_colonial_power = yes }
+		localization_key = CONGO_overlord_name_hol
+	}
+	text = {
+		localization_key = CONGO_overlord_name_bel
+	}
+}
+
+defined_text = {
+	name = CONGO_GetOverlordNameDef
+	text = {
+		trigger = { CONGO_netherlands_is_the_colonial_power = yes }
+		localization_key = CONGO_overlord_namedef_hol
+	}
+	text = {
+		localization_key = CONGO_overlord_namedef_bel
+	}
+}
+
+defined_text = {
+	name = CONGO_GetOverlordNameDefCap
+	text = {
+		trigger = { CONGO_netherlands_is_the_colonial_power = yes }
+		localization_key = CONGO_overlord_namedefcap_hol
+	}
+	text = {
+		localization_key = CONGO_overlord_namedefcap_bel
+	}
+}
+
+defined_text = {
+	name = CONGO_GetOverlordAdjective
+	text = {
+		trigger = { CONGO_netherlands_is_the_colonial_power = yes }
+		localization_key = CONGO_overlord_adj_hol
+	}
+	text = {
+		localization_key = CONGO_overlord_adj_bel
+	}
+}
+
+defined_text = {
+	name = CONGO_GetOverlordDiamondCity
+	text = {
+		trigger = { CONGO_netherlands_is_the_colonial_power = yes }
+		localization_key = CONGO_overlord_diamond_city_hol
+	}
+	text = {
+		localization_key = CONGO_overlord_diamond_city_bel
+	}
+}
+
+defined_text = {
+	name = CONGO_GetOverlordSeat
+	text = {
+		trigger = { CONGO_netherlands_is_the_colonial_power = yes }
+		localization_key = CONGO_overlord_seat_hol
+	}
+	text = {
+		localization_key = CONGO_overlord_seat_bel
+	}
+}

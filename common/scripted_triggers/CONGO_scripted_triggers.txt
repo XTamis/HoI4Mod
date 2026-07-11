@@ -7,6 +7,34 @@ CONGO_is_a_congo_viable_nation = {
 	}
 }
 
+# True while a loyal colonial Governor-General runs the Congo - Pierre Ryckmans
+# under Belgium, or Patrick Said when the Netherlands has taken over.
+COG_governor_general_is_in_charge = {
+	OR = {
+		has_country_leader = {
+			ruling_only = yes
+			character = COG_pierre_ryckmans
+		}
+		has_country_leader = {
+			ruling_only = yes
+			character = COG_patrick_said
+		}
+	}
+}
+
+# True when the Netherlands (rather than Belgium) is the Congo's colonial power.
+# Usable from any scope; also used by the scripted localisation flavor.
+CONGO_netherlands_is_the_colonial_power = {
+	OR = {
+		COG = { is_subject_of = HOL }
+		AND = {
+			NOT = { COG = { is_subject_of = BEL } }
+			NOT = { COG = { is_in_faction_with = BEL } }
+			COG = { is_in_faction_with = HOL }
+		}
+	}
+}
+
 CONGO_at_least_six_focuses_done = {
 	custom_trigger_tooltip = {
 		tooltip = CONGO_at_least_six_focuses_done_tt
