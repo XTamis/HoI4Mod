@@ -10,8 +10,8 @@ characters = {
 			civilian = {
 				# Once your custom portrait is at gfx/leaders/COG/portrait_COG_dutch_governor_general.dds,
 				# delete the generic line below and uncomment the custom one:
-				large = GFX_portrait_europe_generic_land_13
-				#large = GFX_portrait_COG_dutch_governor_general
+				#large = GFX_portrait_europe_generic_land_13
+				large = GFX_portrait_COG_dutch_governor_general
 			}
 		}
 

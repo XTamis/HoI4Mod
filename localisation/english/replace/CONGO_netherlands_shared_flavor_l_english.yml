@@ -46,5 +46,7 @@
  CONGO_republic_of_congo_desc: "The heady air of freedom can be felt throughout the new republic. Whether the future holds a place beside that of [CONGO_GetOverlordName], or in opposition to the former colonial master, there is only one thing certain. This future is for the Congo alone to decide."
  CONGO_appoint_van_overstraeten_tt: "§YRaoul van Overstraeten§! is sent to become a §YField Marshal§! for the §Y[CONGO_GetOverlordAdjective] Congo§!"
  # === Cosmetic tag: dynamic country name for the colonial Congo ===
- COG_belgian_congo: "[CONGO_GetOverlordAdjective] Congo"
- COG_belgian_congo_DEF: "The [CONGO_GetOverlordAdjective] Congo"
+ COG_belgian_congo: "$OVERLORDADJ$ Congo"
+ COG_belgian_congo_DEF: "The $OVERLORDADJ$ Congo"
+ COG_belgian_congo_neutrality: "$OVERLORDADJ$ Congo"
+ COG_belgian_congo_neutrality_DEF: "the $OVERLORDADJ$ Congo"
