@@ -1,0 +1,22 @@
+# Colonial Returns for the Netherlands as overlord of the Congo
+# Mirrors BEL_belgian_congo_colonial_returns_dynamic_modifier but reads variables stored on HOL
+HOL_belgian_congo_colonial_returns_dynamic_modifier = {
+	enable = { always = yes }
+	remove_trigger = {
+		COG = {
+			NOT = {
+				is_subject_of = ROOT
+			}
+		}
+	}
+	icon = GFX_idea_BEL_belgian_congo_colonial_returns_dynamic_modifier
+	political_power_factor = HOL.HOL_belgian_congo_colonial_returns_dynamic_modifier_political_power_factor
+	resource_trade_cost_bonus_per_factory = HOL.HOL_belgian_congo_colonial_returns_dynamic_modifier_resource_trade_cost_bonus_per_factory
+	production_lack_of_resource_penalty_factor = HOL.HOL_belgian_congo_colonial_returns_dynamic_modifier_production_lack_of_resource_penalty_factor
+	industrial_capacity_factory = HOL.HOL_belgian_congo_colonial_returns_dynamic_modifier_industrial_capacity_factory
+	industrial_capacity_dockyard = HOL.HOL_belgian_congo_colonial_returns_dynamic_modifier_industrial_capacity_dockyard
+	autonomy_manpower_share = HOL.HOL_belgian_congo_colonial_returns_dynamic_modifier_autonomy_manpower_share
+	consumer_goods_factor = HOL.HOL_belgian_congo_colonial_returns_dynamic_modifier_consumer_goods_factor
+	air_training_xp_gain_factor = HOL.HOL_belgian_congo_colonial_returns_dynamic_modifier_air_training_xp_gain_factor
+	production_speed_air_base_factor = HOL.HOL_belgian_congo_colonial_returns_dynamic_modifier_production_speed_air_base_factor
+}
