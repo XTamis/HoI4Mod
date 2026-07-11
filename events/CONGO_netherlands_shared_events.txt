@@ -24,5 +24,16 @@ country_event = {
 		}
 
 		promote_character = COG_patrick_said
+
+		# The new administration renames the cities honoring Belgian royalty
+		# after the House of Orange instead.
+		set_province_name = {
+			id = 5117 # Léopoldville
+			name = "Wilhelminastad"
+		}
+		set_province_name = {
+			id = 191 # Élisabethville
+			name = "Julianadorp"
+		}
 	}
 }

@@ -5,7 +5,7 @@
 add_namespace = ww_congo
 add_namespace = congo_independence_struggle
 
-# Our overlord Belgium allocates additional resources to nvestment into us - event for Congo
+# Our overlord Belgium allocates additional resources to investment into us - event for Congo
 country_event = {
 	id = ww_congo.1
 	title = ww_congo.1.t
